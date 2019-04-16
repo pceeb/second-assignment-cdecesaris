@@ -1,0 +1,30 @@
+ 1070  mv For_Daniel_Wildcard.txt ../
+ 1071  cd ../
+ 1072  ls
+ 1073  cd ../
+ 1074  ls
+ 1075  cd Sandbox/
+ 1076  ls
+ 1077  ls *
+ 1078  ls File*
+ 1079  cd TestWild/
+ 1080  ls File*
+ 1081  ls *.txt
+ 1082  ls File?.txt
+ 1083  ls File[1-2].txt
+ 1084  ls File[!3].*
+ 1085  wget  http://www.cep.unep.org/pubs/legislation/spawannxs.txt
+ 1086  ls
+ 1087  head -n 50 spawannxs.txt 
+ 1088  grep Orchidaceae spawannxs.txt 
+ 1089  grep -c Orchidaceae spawannxs.txt 
+ 1090  grep Falco spawannxs.txt 
+ 1091  grep -i Falco spawannxs.txt 
+ 1092  grep -i ara spawannxs.txt 
+ 1093  grep -i -w ara spawannxs.txt 
+ 1094  grep -i -w -A 1 ara spawannxs.txt 
+ 1095  grep -i -w -A -n 1 ara spawannxs.txt 
+ 1096  grep ara -n spawannxs.txt 
+ 1097  grep -n  ara  spawannxs.txt 
+ 1098  grep -i -w -v  ara  spawannxs.txt 
+ 1099  history | tail -n 30 > For_Daniel_grep.txt

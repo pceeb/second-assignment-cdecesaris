@@ -1,0 +1,197 @@
+  955  ls
+  956  cd ../
+  957  ls
+  958  cd Data/
+  959  ls
+  960  cd fasta
+  961  ls
+  962  head -n3 4072288326.fasta
+  963  head -n3 407228326.fasta
+  964  wc -l *.fasta
+  965  tail -n+2  407228326.fasta
+  966  tail -n+2  407228326.fasta | tr -d "\n"
+  967  tail -n+2  407228326.fasta | tr -d "\n" | wc -c
+  968  tail -n+2  407228412.fasta | tr -d "\n" | wc -c
+  969  tail -n+2 E.coli.fasta | tr -d "\n" | wc -c
+  970  tail -n+2 E.coli.fasta | tr -d "\n" | grep -o "ATGTAXATA"
+  971  tail -n+2 E.coli.fasta | tr -d "\n" | grep -o "ATGTACATA"
+  972  tail -n+2 407228326.fasta | tr -d "\n" | grep -o "ATGTACATA"
+  973  tail -n+2 E.coli.fasta | tr -d "\n" | grep -o "ATGC" | wc -l
+  974  tail -n+2 E.coli.fasta | tr -d "\n" | grep -o [A,T] | wc -l
+  975  tail -n+2 E.coli.fasta | tr -d "\n" | grep -o [G,C] | wc -l
+  976  cd ../
+  977  ls
+  978  cd ../
+  979  ls
+  980  cd Data/
+  981  ls
+  982  man otoos10.txt 
+  983  ls
+  984  head otoos10.txt 
+  985  head -n 264 otoos10.txt 
+  986  wc -l otoos10.txt 
+  987  head -n [264-13900] otoos10.txt 
+  988  tail -n+264 | head -n+13636 > darwin.txt
+  989  ls
+  990  head darwin.txt 
+  991  less  darwin.txt 
+  992  tail -n+264 | head -n+13636 >> darwin.txt
+  993  tail -n+264 otoos10.txt  | head -n+13636 otoos10.txt > darwin.txt
+  994  ls
+  995  less darwin.txt 
+  996  h_data=1G
+  997  ls
+  998  cd classdata/
+  999  ls
+ 1000  cd second-assignment-cdecesaris/
+ 1001  ls
+ 1002  cd introscicomp2014/
+ 1003  ls
+ 1004  cd UNIX/
+ 1005  ls
+ 1006  cd Sandbox/
+ 1007  ls
+ 1008  pwd
+ 1009  mv For_Daniel_grep.txt ../../../
+ 1010  mv For_Daniel_Wildcard.txt ../../../
+ 1011  mv For_Daniel_find.txt ../../../
+ 1012  cd ../../../
+ 1013  ls
+ 1014  rm file2.txt
+ 1015  less my_file.txt 
+ 1016  rm my_file.txt
+ 1017  ls
+ 1018  cd ../
+ 1019  ls
+ 1020  cd Week
+ 1021  cd Week3
+ 1022  ls
+ 1023  less UC_mascots.txt 
+ 1024  ls
+ 1025  cd
+ 1026  cd ../
+ 1027  ls
+ 1028  cd c177-08
+ 1029  ls
+ 1030  cd eeb-177/
+ 1031  ls
+ 1032  cd ../
+ 1033* 
+ 1034  ls
+ 1035  nano test_shell_script__.sh 
+ 1036  cp test_shell_script__.sh  ~/classdata/In_class/week2/my_first_scripts_forf
+ 1037  ls
+ 1038  cd classdata/
+ 1039  ls
+ 1040  cd second-assignment-cdecesaris/
+ 1041  ls
+ 1042  cd introscicomp2014/
+ 1043  ls
+ 1044  cd UNIX/
+ 1045  ls
+ 1046  cd Sandbox/
+ 1047  ls
+ 1048  cd TestWild
+ 1049  ls
+ 1050  cd ../
+ 1051  ls
+ 1052   cd Data/
+ 1053  ls
+ 1054  wc -l otoos10.txt 
+ 1055  tail -n 1056 otoos10.txt 
+ 1056  tail -n 1060 otoos10.txt 
+ 1057  tail -n -r 1060 otoos10.txt 
+ 1058  tail -n 1060 otoos10.txt| sort -r
+ 1059  tail -n 1080 otoos10.txt| sort -r
+ 1060  #!/bin/bash
+ 1061  # This program prints:
+ 1062  # hello world!
+ 1063  # our names are <type your names>
+ 1064  # we like <type in your favorite animals>
+ 1065  # Have a great day!
+ 1066  echo "our names are <type your names>"
+ 1067  echo "we like <type in your favorite animals>"
+ 1068  tail -n 1080 otoos10.txt| sort -r
+ 1069  tail -n 1090 otoos10.txt| sort -r
+ 1070  cd ../
+ 1071  ls
+ 1072  cd Data
+ 1073  ls
+ 1074  less darwin.txt 
+ 1075  nano  darwin.txt 
+ 1076  nano  otoos10.txt 
+ 1077  wc -l darwin.txt 
+ 1078  tail -n 13372 darwin.txt > darwin2.txt
+ 1079  nano darwin2.txt 
+ 1080  tail -n 13373 darwin.txt > darwin2.txt
+ 1081  nano darwin2.txt 
+ 1082  darwin2.txt > darwin.txt
+ 1083  ls
+ 1084  mv  darwin2.txt  darwin.txt
+ 1085  ls
+ 1086  nano darwin.txt 
+ 1087  less darwin.txt 
+ 1088  less darwin.txt | grep -i "evolution\|evolved" |wc -l
+ 1089  less darwin.txt | grep -i "evolution\|evolved" 
+ 1090  less darwin.txt | grep -i "evolution|evolved"
+ 1091  less darwin.txt | grep -i "evolution|evolved"| wc -l
+ 1092  less darwin.txt | grep -i "evolution"| wc -l
+ 1093  less darwin.txt | grep -i "evolved"| wc -l
+ 1094  cat darwin.txt | grep -i "evolved"| wc -l
+ 1095  cat darwin.txt | grep  "evolved"| wc -l
+ 1096  cat darwin.txt | grep  "ev"| wc -l
+ 1097  cat darwin.txt | grep  "evolv"| wc -l
+ 1098  cat darwin.txt | grep  "evolve"| wc -l
+ 1099  cat darwin.txt | grep  "evolved"| wc -l
+ 1100  cat darwin.txt | grep  "evolved"
+ 1101  cat darwin.txt |tr -d "\n" | grep  "evolved"
+ 1102  cat darwin.txt |tr -d "\n" | grep -o "evolved"
+ 1103  less darwin.txt |tr -d "\n" | grep -o "evolved"
+ 1104  less darwin.txt |tr -d "\n" | grep -o "evolution"
+ 1105  less darwin.txt | grep -i "evolution\|evolved" |wc -l
+ 1106  less darwin.txt | grep -i  "natural selection" |wc -l
+ 1107  less darwin.txt | grep -i  "Wallace" |wc -l
+ 1108  less darwin.txt | grep -i  "Wallace"|grep -i "natural selection" |wc -l
+ 1109  less darwin.txt | grep -i  "Wallace"| wc -l
+ 1110  less darwin.txt | grep -i  "Wallace|natural selection"| wc -l
+ 1111  less darwin.txt | grep -i -E  "Wallace.*natural selection"| wc -l
+ 1112  less darwin.txt | grep -i -E  "Wallace\|natural selection"| wc -l
+ 1113  less darwin.txt | grep -i   "Wallace\|natural selection"| wc -l
+ 1114  history | tail -n 100 >For_Daniel_realData.txt
+ 1115  ls
+ 1116  cd Temperatures/
+ 1117  ls
+ 1118  less 180[0-3] | grep "TMAX"
+ 1119  less *.csv | grep "TMAX"
+ 1120  less *.csv | grep "TMAX" | grep "1010"
+ 1121  less *.csv | grep "TMAX" | grep "1010,"
+ 1122  grep 180[0-3] | grep "TMAX" | grep "1010,"
+ 1123  grep 180[0-3] | grep TMAX | grep "1010,"
+ 1124  less .csv*] | grep TMAX | grep "1010,"
+ 1125  less *.csv | grep TMAX | grep "1010,"
+ 1126  less *.csv | grep TMAX | grep "0101,"
+ 1127  less *.csv | grep TMAX | grep "0101,"|ls -l
+ 1128  grep *.csv | grep TMAX | grep "0101,"
+ 1129  grep -H  "TMAX"  | grep "0101,"
+ 1130  grep -H  "TMAX" *.csv | grep "0101,"
+ 1131  history | tail -n 10 >> For_Daniel_realData.txt
+ 1132  ls
+ 1133  nano For_Daniel_realData.txt 
+ 1134  history | tail -n 140 >> For_Daniel_realData.txt
+ 1135  nano For_Daniel_realData.txt 
+ 1136  history | tail -n 200 >> For_Daniel_realData.txt
+ 1137  nano For_Daniel_realData.txt 
+ 1138  ls
+ 1139  grep 
+ 1140  grep "TMAX" *1800.csv*
+ 1141  grep "TMAX" *1800.csv*| cut -f1,2
+ 1142  grep "TMAX" *1800.csv*| cut -f1,0,2
+ 1143  grep "TMAX" *1800.csv*| cut -f1,1,2
+ 1144  grep "TMAX" *1800.csv*| cut -d, -f1,3
+ 1145  grep "TMAX" *1800.csv*| cut -d, -f4
+ 1146  grep "TMAX" *1800.csv*|grep "0105" | cut -d, -f4| grep "TMAX" *1800.csv*|grep "0205" | cut -d, -f4| grep "TMAX" *1800.csv*|grep "0105" | cut -d, -f4| grep "TMAX" *1800.csv*|grep "0205" | cut -d, -f4| grep "TMAX" *1800.csv*|grep "0105" | cut -d, -f4| grep "TMAX" *1800.csv*|grep "0205" | cut -d, -f4| grep "TMAX" *1800.csv*|grep "0105" | cut -d, -f4| grep "TMAX" *1800.csv*|grep "0205" | cut -d, -f4
+ 1147  grep "TMAX" *1800.csv*|grep "0105" | cut -d, -f4| grep "TMAX" *1800.csv*|grep "0205" | cut -d, -f4| sort
+ 1148  grep "TMAX" *1800.csv*|grep "0105" | cut -d, -f4| grep "TMAX" *1800.csv*|grep "0205" | cut -d, -f4| sort -n
+ 1149  grep "TMAX" *1800.csv*|grep "0105" | cut -d, -f4| grep "TMAX" *1800.csv*|grep "0205" | cut -d, -f4| sort -n| tail -n 1
+ 1150  grep "TMAX" *1800.csv*|grep "0105" | cut -d, -f4| grep "TMAX" *1800.csv*|grep "0505" | cut -d, -f4| sort -n| tail -n 1
+ 

@@ -1,0 +1,30 @@
+ 1104  ls
+ 1105  cat For_Daniel_Wildcard.txt
+ 1106  mkfir TestFind
+ 1107  cd TestWild/
+ 1108  ls
+ 1109  cd ../
+ 1110  mkdir TestFind
+ 1111  ls
+ 1112  cd Test
+ 1113  cd TestFind
+ 1114  ls
+ 1115  mkdir -p Dir1/Dir11/Dir111
+ 1116  mkdir Dir2
+ 1117  mkdir Dir3
+ 1118  touch Dir1/File1.txt
+ 1119  touch Dir1/File1.csv
+ 1120  touch Dir1/File1.tex
+ 1121  touch Dir2/File2.txt
+ 1122  touch Dir2/File2.csv
+ 1123  touch Dir2/File2.tex
+ 1124  touch Dir1/Dir11/Dir111/File111.txt
+ 1125  touch Dir3/File3.txt
+ 1126  ls
+ 1127  fine . -name "File1.txt"
+ 1128  find . -name "File1.txt"
+ 1129  find . -name "*.txt"
+ 1130  find . -maxdepth 2 -name "*.txt"
+ 1131  find . -type d
+ 1132  find . -type f -exec ls -s {} \; | sort -n | head -10
+ 1133  history | tail -n 30 > For_Daniel_find.txt
